@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+      <head>
+      <meta charset="UTF-8"/>
+            <meta charset="utf-8i">
+            <!--Import Google Icon Font-->
+            <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
+            <!--Import materialize.css-->
+            <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+            <link rel="stylesheet" type="text/css" href="css/tabs.css">
+             
+      <script src="js/jquery-2.2.1.js"></script>
+           <!--Let browser know website is optimized for mobile-->
+           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+
+      <body>
+           
+
+                                    
+                                  
+
+
+           <div class="ara">   </div>
+                <div class="container grey lighten-4">
+                       <div class="col s11">
+                            <div class="row">
+                                  <div class="ara"> </div>
+                                       <div class="col s8">
+                                             <ul class="tabs">
+                                                  <li class="tab col s3" id="haqqim"><a class="active"  href="#test1">Haqqımızda</a></li>
+                                                  <li class="tab col s3 " id="sayt" ><a href="#test2">Saytda Reklam</a>
+                                                  </li>
+                                             </ul>  
+                                       </div>
+                                       <div id="test1" class="col s11">
+                                             <h1>Haqqımızda</h1> 
+                                                  <p><b>Layihə haqqında:</b></p>
+                                                  <p>Boss.Az - əmək bazarının bütün iştirakçılarının faydalana biləcəyi, dəqiq və sürətli iş və ya işçi axtarışı üçün nəzərdə tutulmuş onlayn platformadır. Layihə istifadəçilərə geniş iş elanı və CV bazasından rahat istifadə imkanı yaradır.</p>
+                                                  <p>Layihə fəaliyyətinə 2008-ci ildə başlayıb və hal-hazırda Azərbaycanın əmək bazarında aparıcı onlayn resuslarından biridir.</p>
+                                                  <p>Boss.Az - işədüzəltmə şirkəti deyil. Layihənin məqsədi işə götürən ilə potensial işçi arasında vasitəçisiz və operativ əlaqə imkanı yaratmaqdır.</p>
+                                                  <p><b>Elanların yerləşdirilməsi:</b></p>
+                                                  <p>Boss.Az - istifadəçilərə sayta iş elanı və CV yerləşdirmək imkanı yaradır. Hər istifadəçi ay ərzində ödənişsiz olaraq bir iş elanı və bir CV yerləşdirə bilər.</p>
+                                                  <p><b>Bizimlə əlaqə:</b></p>
+                                                  <p>Biz layihənin inkişafı və təkmilləşdirilməsi üçün əlimizdən gələni edirik və sizin bu haqda olan fikirlərinizi və təkliflərinizi dinləməyə hazırıq. Bizimlə əlaqə yaratmaq üçün <a style="color: #daaf07" href="mailto:boss@boss.az">boss@boss.az</a> e-mail ünvanına yaza və ya <a style="color: #daaf07" href="tel:0124041427">(012) 404-14-27</a> telefon nömrəsinə zəng edə bilərsiniz.</p> 
+                                       </div>        
+                                       <div id="test2" class="col s11">
+                                             <h1>Saytda reklam</h1>
+                                             <p><span style="color:#739e5b">BOSS.AZ - Azərbaycanın ən məşhur və stabil artan internet resurslarından biridir. Hər gün bu saytı minlərlə insan ziyarət edir.</span></p>
+                                             <p><span style="color:#db7443">BOSS.AZ saytında reklam sizin brendləriniz, məhsullarınız, xidmətləriniz, aksiyalarınız və əhəmiyyətli hadisələriniz barədə məlumatı çox geniş auditoriyaya çatdırmaq üçün ən gözəl üsüllarından biridir!</span></p>
+                                             <p><span style="color:#739e5b">Siz həm brendinizin tanınmasının əhəmiyyətli dərəcədə artmasına, həm də məhsullarınız barədə məlumatın geniş yayılmasına nail olacaq, və həmçinin şirkətlərinizin internet saytlarının ziyarət edilməsinin sadə üsülla çoxalması imkanını əldə edəcəksiniz.</span></p>
+                                             <p><span style="color:#739e5b">Sizinlə əməkdaşlığa şad olardıq!</span></p>
+                                             <p><span style="color:#739e5b">GAP </span><span style="color:#db7443">MEDIA <span style="color:#739e5b">— Sizin</span> <span style="color:#db7443">media reklam agentliyiniz</span></span> </p>
+                                             <p><span style="color:#db7443">+99412 594 12 34</span><br> 
+                                             <span style="color:#db7443">+99477 271 44 00</span><br> <a href="mailto:info@gapmedia.az" style="color:#739e5b">info@gapmedia.az</a><br> <a href="http://www.gapmedia.az" style="color:#739e5b">www.gapmedia.az</a>
+                                            </p>                           
+                                       </div>                          
+                                  </div >    
+                            </div>
+                      </div>
+
+
+
+
+
+
+
+<script > 
+
+  $(document).ready(function(){  
+
+    $("#sayt").addClass("sayt"); 
+    $("#sayt").click(function(){
+    $(".sayt").removeClass("sayt");
+    $("#haqqim").addClass("sayt");
+
+ });
+
+    $("#haqqim").click(function(){
+    $("#sayt").addClass("sayt");
+    $("#haqqim").removeClass("sayt");
+
+ });
+
+   $("#sayt").mouseover(function(){
+   $("#sayt").removeClass("sayt");
+
+});
+
+   $("#haqqim").mouseover(function(){
+   $("#haqqim").removeClass("sayt");
+
+});
+
+
+});    
+
+
+</script>
+
+<script type="text/javascript" src="js/materialize.min.js"> 
+
+            $(document).ready(function(){
+            $('ul.tabs').tabs('select_tab', 'test1');
+ });
+
+
+</script>
+</body>
+</html>
